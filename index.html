@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Title 2</title>
+</head>
+<body>
+
+<div class="firstPage">
+    <audio id="soundForever" src="spokoynaya-fonovaya-muzyka.mp3"></audio>
+    <label> Привет!  </label>
+    <label> Ты готов проверить кто умнеее, ты или монстры?</label>
+    <button type="button" class="firstButton">GO</button>
+</div>
+
+<div class="choosePlayer">
+    <label class="choosePlayerLabel">Выбери игрока</label>
+    <div style="clear: both"></div>
+    <div class="playerView">
+        <button type="button" class="prev">&#8226;</button>
+    <img class="choosePlayerImg" src="img/g1.png">
+        <button type="button" class="next">&#8226;</button>
+    </div>
+    <div class="playerName">
+        <label class="namePlayer"> Введи свое имя </label>
+        <input class="player" required>
+        <button type="button" class="choosePlayerAll"> Next step</button>
+    </div>
+</div>
+
+
+<div class="chooseMonstr">
+    <label class="choosePlayerLabel">Выбери монстра</label>
+    <div style="clear: both"></div>
+    <div class="playerView">
+        <button type="button" class="prevMonstr">&#8226;</button>
+        <img class="chooseMonstrImg" src="img/m1.png">
+        <button type="button" class="nextMonstr">&#8226;</button>
+    </div>
+    <div class="monstrName">
+        <label class="monstrLabel"> Имя этого монстра </label>
+        <input class="monstr" type="text" required>
+        <button type="button" class="chooseMonstrAll">Start</button>
+    </div>
+</div>
+
+<div class="field">
+    <div class="fieldPlayer">
+        <label>Твой уровень жизни  </label>
+        <p class="yourScore"> 100 </p>
+    </div>
+    <div class="fieldMonstr">
+        <label>Уровень жизни монстра  </label>
+        <p class="monstrScore"> 100 </p>
+    </div>
+
+</div>
+
+<form class="stroke">
+    <label>Победи этого монстра и начни сражение со следующим</label>
+    <div class="treatment">
+        <p> Если правильно справишься с заданием, то это лекарство поможет тебе</p>
+        <button id="10" class="tempTreatment" type="button"><img src="img/l3.jpg" alt="">
+            Прибавит тебе 10 единиц жизни</button>
+        <button id="20" class="tempTreatment" type="button"><img src="img/l1.jpg" alt="">
+            Прибавит тебе 20 единиц жизни</button>
+        <button id="30" class="tempTreatment" type="button"><img src="img/l2.jpg" alt="">
+            Прибавит тебе 30 единиц жизни</button>
+    </div>
+    <div class="death">
+        <p> Если правильно справишься с заданием, то это заклинание поможет тебе</p>
+        <button id="-10" class="tempTreatment" type="button"><img src="img/mag1.png" alt="">
+            Отнимет 10 единиц жизни мостр</button>
+        <button id="-20" class="tempTreatment" type="button"><img src="img/mag2.png" alt="">
+            Отнимет 20 единиц жизни монстра</button>
+        <button id="-30" class="tempTreatment" type="button"><img src="img/mag3.png" alt="">
+            Отнимет 30 единиц жизни монстра</button>
+    </div>
+</form>
+
+
+    <form class="raund">
+       <p class="caption">Твоя задача</p>
+        <p class="ask"></p>
+        <input class="answer" required>
+        <button class="answerButton" type="button">Ввести ответ</button>
+    </form>
+<script src="script.js"></script>
+
+
+<form class="resultBlock">
+    <p class="result"></p>
+</form>
+<form class="end">
+    <p class="endWords"></p>
+    <ul class="people">
+    </ul>
+    <button class="back">Сыграть еще раз</button>
+</form>
+</body>
+</html>
